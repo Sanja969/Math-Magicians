@@ -26,7 +26,7 @@ to get a local copy , clone the repository using git clone
 
 After you clone it run  the following commands
 
- - cd Leaderboard
+ - cd Math-Magicians/my-app
  - npm install
 - npm run start
 
