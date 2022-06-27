@@ -9,7 +9,7 @@ button {
   font-size: 24px;
 }
 
-.raw > button:last-child{
+.raw > button:last-child {
   background-color: #f5913e;
 }
 
@@ -23,9 +23,11 @@ button {
   .Calculator-box {
     width: 75%;
   }
+
   button {
     height: 100px;
   }
+
   .Display {
     height: 100px;
   }
