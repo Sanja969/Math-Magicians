@@ -19,9 +19,6 @@
     }]
   },
   "ignorePatterns": [
-    "dist/",
-    "build/",
-    "tests",
-    "src/__mocks__"
+    "public/"
   ]
 }
