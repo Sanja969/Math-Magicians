@@ -1,0 +1,40 @@
+.Calculator-box {
+  margin-top: 200px;
+  width: 90%;
+}
+
+button {
+  height: 50px;
+  border-color: #efefef !important;
+  font-size: 24px;
+}
+
+.raw > button:last-child {
+  background-color: #f5913e;
+}
+
+.Display {
+  height: 50px;
+  background-color: rgb(60, 60, 57);
+  color: aliceblue;
+}
+
+@media (min-width: 768px) {
+  .Calculator-box {
+    width: 75%;
+  }
+
+  button {
+    height: 100px;
+  }
+
+  .Display {
+    height: 100px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .Calculator-box {
+    width: 50%;
+  }
+}
