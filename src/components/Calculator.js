@@ -9,7 +9,7 @@ const raw3 = ['4', '5', '6', '-'];
 const raw4 = ['1', '2', '3', '+'];
 const raw5 = ['0', '.', '='];
 
-function Calculator() {
+const Calculator = () => {
   const [obj, setObj] = useState({ total: '0', next: null, operation: null });
   const { total, next, operation } = obj;
 
@@ -43,6 +43,6 @@ function Calculator() {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;

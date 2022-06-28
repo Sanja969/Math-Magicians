@@ -29,7 +29,7 @@ Key.propTypes = {
   handleClick: PropTypes.func.isRequired,
 };
 
-function KeysRaw(props) {
+const KeysRaw = (props) => {
   let count = 0;
   let cl = 'col-3';
   const rawList = [];
@@ -43,6 +43,6 @@ function KeysRaw(props) {
     count += 1;
   });
   return rawList;
-}
+};
 
 export default KeysRaw;
