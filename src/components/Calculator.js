@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import KeysRaw from './keys';
 import './Calculator.css';
-import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
 const raw1 = ['AC', '+/-', '%', '÷'];
@@ -9,50 +9,7 @@ const raw3 = ['4', '5', '6', '-'];
 const raw4 = ['1', '2', '3', '+'];
 const raw5 = ['0', '.', '='];
 
-class Key extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    const { handleClick, value } = this.props;
-    handleClick(value);
-  }
-
-  render() {
-    const { className, value } = this.props;
-    return (
-      <button type="button" className={className} onClick={this.handleClick}>
-        {value}
-      </button>
-    );
-  }
-}
-
-Key.propTypes = {
-  className: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
-};
-
-function KeysRaw(props) {
-  let count = 0;
-  let cl = 'col-3';
-  const rawList = [];
-  props.raw.forEach((item) => {
-    if (count === 0 && props.raw[0] === '0') {
-      cl = 'col-6';
-    } else {
-      cl = 'col-3';
-    }
-    rawList.push(<Key className={cl} value={item} handleClick={props.handleClick} />);
-    count += 1;
-  });
-  return rawList;
-}
-
-function Calculator() {
+const Calculator = () => {
   const [obj, setObj] = useState({ total: '0', next: null, operation: null });
   const { total, next, operation } = obj;
 
@@ -86,6 +43,6 @@ function Calculator() {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;
