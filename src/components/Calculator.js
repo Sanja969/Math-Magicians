@@ -19,26 +19,26 @@ const Calculator = () => {
 
   return (
     <div className="Calculator-box w-75">
-      <div className="Display d-flex align-items-center justify-content-end p-2 h2 m-0">
+      <div className="Display d-flex align-items-center justify-content-end p-2 h2 m-0" title="display">
         {total}
         {operation}
         {next}
       </div>
       <div className="Calculator-body">
         <div className="raw">
-          <KeysRaw raw={raw1} handleClick={handleClick} />
+          <KeysRaw raw={raw1} handleClick={handleClick} key={1} />
         </div>
         <div className="raw">
-          <KeysRaw raw={raw2} handleClick={handleClick} />
+          <KeysRaw raw={raw2} handleClick={handleClick} key={2} />
         </div>
         <div className="raw">
-          <KeysRaw raw={raw3} handleClick={handleClick} />
+          <KeysRaw raw={raw3} handleClick={handleClick} key={3} />
         </div>
         <div className="raw">
-          <KeysRaw raw={raw4} handleClick={handleClick} />
+          <KeysRaw raw={raw4} handleClick={handleClick} key={4} />
         </div>
         <div className="raw">
-          <KeysRaw raw={raw5} handleClick={handleClick} />
+          <KeysRaw raw={raw5} handleClick={handleClick} key={5} />
         </div>
       </div>
     </div>
