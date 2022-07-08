@@ -18,7 +18,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="Calculator-box">
+    <div className="Calculator-box w-75">
       <div className="Display d-flex align-items-center justify-content-end p-2 h2 m-0">
         {total}
         {operation}
