@@ -1,0 +1,7 @@
+.Quote {
+  color: #03a9f4;
+}
+
+.Quote > span {
+  font-weight: 900;
+}
