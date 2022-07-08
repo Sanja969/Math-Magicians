@@ -8,9 +8,13 @@ Math magicians" is a website for all fans of mathematics. It is a Single Page Ap
 - Technologies: CSS, Linter, gitflow, React
 
 
-## Live Demo (if available)
+## Live Demo on Heroku
 
-[Live Demo Link](https://sanja969.github.io/Math-Magicians)
+[Live Demo Link](https://sanja-math-magicians.herokuapp.com/)
+
+## Live Demo on Netlify
+
+[Live Demo Link](https://62c85c554d7df63cf03dd389--harmonious-kataifi-c59453.netlify.app/)
 
 
 # Getting Started
