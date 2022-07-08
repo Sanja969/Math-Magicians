@@ -39,7 +39,7 @@ const KeysRaw = (props) => {
     } else {
       cl = 'col-3';
     }
-    rawList.push(<Key className={cl} value={item} handleClick={props.handleClick} />);
+    rawList.push(<Key className={cl} value={item} handleClick={props.handleClick} key={count} />);
     count += 1;
   });
   return rawList;
